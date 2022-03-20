@@ -18,6 +18,7 @@ for b in range(l):
     tempFile=open(dst, 'r')
     got=tempFile.read()
     got=got.replace(got[0:1],"")
+    tempFile.close()
     tempFile=open(dst, 'w')
     tempFile.write(h+got)
     tempFile.close()
